@@ -1,0 +1,57 @@
+.BasicCardMainDiv{
+    width: 400px;
+    margin: auto;
+    
+}
+
+.BasicCardDiv{
+   padding: 5px;
+    display: flex;
+    margin-top: 5px;
+    font-weight: bold;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.ImageDiv{
+   
+    display: flex;
+    width: 50%;
+}
+.ImageDiv>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.ModalHead{
+    display: flex;
+   border-bottom: 1px solid;
+   padding: 10px;
+   justify-content:left;
+   font-family: 'Courier New', Courier, monospace;
+}
+.ModalHead>img{
+    width: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.InfoDiv{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.ModalHead>div>p{
+    margin: 5px;
+}
+.CharInfo{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Courier New', Courier, monospace;
+}
+.gInfo{
+    color: black;
+    font-weight: bold;
+    
+}

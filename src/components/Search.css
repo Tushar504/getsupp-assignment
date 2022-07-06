@@ -1,0 +1,39 @@
+.SearchDiv{
+  
+    width: 400px;
+    margin: auto;
+    display: flex;
+   padding-left: 10px;
+   height: 50px;
+   justify-content: left;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.SearchDiv>input{
+    margin: 0px;
+    border: 0px;
+    outline: none;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.ScrollDiv{
+    height: 500px;
+    overflow-y: auto;
+  
+    width: 450px;
+    margin: auto;
+}
+.ScrollDiv::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+
+ .ScrollDiv::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+  }
+  .ScrollDiv::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #666666;
+  }
