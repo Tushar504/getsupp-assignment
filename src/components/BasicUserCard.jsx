@@ -21,12 +21,12 @@ export const BasicUserCard=({data})=>{
   
      return (
          <div className="BasicCardMainDiv">
-            {data? data.map((ele)=>{
+            {data? data.map((ele,index)=>{
                 return (<div onClick={()=>{
                     
                      setModalData(ele)
                      setOpen(true)
-                  }}className="BasicCardDiv" key={ele.id}>
+                  }}className="BasicCardDiv"  >
                     <div className="ImageDiv">
                          <img src={ele.image}/>
                          <p>{ele.name}</p>
