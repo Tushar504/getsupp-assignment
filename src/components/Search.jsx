@@ -33,7 +33,7 @@ export const Search=()=>{
         try {
             let name=event.target.value
             setPage(1)
-            if(name!=""){
+            if(name!==""){
             let res=await fetch(`https://rickandmortyapi.com/api/character/?name=${name}&page=${page}`)
             let data=await res.json()
             setData(data.results)
@@ -54,7 +54,7 @@ export const Search=()=>{
 
    const scrollData=async()=>{
       try {
-        if(dataname!=""){
+        if(dataname!==""){
            let  res=await fetch(`https://rickandmortyapi.com/api/character/?name=${dataname}&page=${page}`)
            let data=await res.json()
           

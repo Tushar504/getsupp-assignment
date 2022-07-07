@@ -7,6 +7,7 @@
    height: 50px;
    justify-content: left;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   margin-bottom: 20px;
 }
 .SearchDiv>input{
     margin: 0px;
@@ -37,3 +38,17 @@
     box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #666666;
   }
+  @media only Screen and (min-width:0px) and (max-width:420px){
+   
+    .SearchDiv{
+  
+      width: 95%;
+    
+  }
+  .ScrollDiv{
+   
+  
+    width: 100%;
+  }
+   
+}

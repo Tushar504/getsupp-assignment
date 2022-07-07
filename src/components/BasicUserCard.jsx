@@ -9,6 +9,9 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
+  '@media (max-width: 420px)' : {
+    width: '80%'
+  },
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -28,7 +31,7 @@ export const BasicUserCard=({data})=>{
                      setOpen(true)
                   }}className="BasicCardDiv"  >
                     <div className="ImageDiv">
-                         <img src={ele.image}/>
+                         <img src={ele.image} alt=""/>
                          <p>{ele.name}</p>
                      </div>
                      <p className="SecondInfo"><CircleIcon sx={{fontSize:10,color:ele.id%2===0?'red':'blue'}}/> {ele.status}-{ele.species}</p>
@@ -43,7 +46,7 @@ export const BasicUserCard=({data})=>{
         <Box sx={style}>
           
             <div className="ModalHead">
-                <img src={modalData.image}/>
+                <img src={modalData.image} alt=""/>
                 <div className="InfoDiv">  
                     <p>{modalData.name}</p>
                     <p><CircleIcon sx={{fontSize:10,color:modalData.id%2===0?'red':'blue'}}/> {modalData.status}-{modalData.species}</p>
